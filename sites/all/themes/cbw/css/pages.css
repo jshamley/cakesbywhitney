@@ -7,12 +7,21 @@
  * ul.links, .pager, .more-link, etc.
  */
 
+/**
+ * Hacks For Development
+ */
+.front #navigation,
+.front a#logo,
+.front h1#page-title {
+  display: none;
+}
 
 /*
  * Body
  */
 
 body {
+  background: #8fd2cb url('../images/bg.jpg') repeat-x 0 0;
   margin: 0;
   padding: 0;
 }
@@ -87,6 +96,7 @@ body {
  */
 
 #main {
+  background: #fff;
 }
 
 /*
