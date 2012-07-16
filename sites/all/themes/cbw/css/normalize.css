@@ -120,9 +120,9 @@ html {
    */
 
   /* Use a 12px base font size */
-  font-size: 75%; /* 16px x 75% = 12px */
+  /* font-size: 75%; /* 16px x 75% = 12px */
   /* Use a 14px base font size */
-  font-size: 87.5%; /* 16px x .875 = 14px */
+  /* font-size: 87.5%; /* 16px x .875 = 14px */
 
   /* Use a 16px base font size */
   font-size: 100%; /* 1 */
@@ -199,7 +199,7 @@ textarea {
 
    */
 
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
 
 /*
@@ -207,6 +207,7 @@ textarea {
  */
 
 body {
+  color: #3e3e3e;
   margin: 0;
 }
 

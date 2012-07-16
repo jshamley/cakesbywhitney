@@ -33,8 +33,8 @@
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
   border: 0 !important;
   word-wrap: break-word;
   _display: inline;
@@ -69,14 +69,15 @@
  */
 
 #main {
-  padding-top: 3em; /* Move all the children of #main down to make room. */
+  padding-top: 0; /* Move all the children of #main down to make room. */
+  padding-bottom: 1em;
+  position: relative;
 }
 
 #navigation {
   position: absolute;
-  top: 0; /* Move the navbar up inside #main's padding. */
-  height: 3em;
-  width: 980px;
+  right: -1em;
+  top: -4.2em; /* Move the navbar up inside #main's padding. */
 }
 
 /*

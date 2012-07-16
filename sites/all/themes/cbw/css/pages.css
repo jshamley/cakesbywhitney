@@ -6,22 +6,14 @@
  * miscellaneous Drupal elements that appear in the $content variable, such as
  * ul.links, .pager, .more-link, etc.
  */
-
-/**
- * Hacks For Development
- */
-.front #navigation,
-.front a#logo,
-.front h1#page-title {
-  display: none;
-}
-
+ 
 /*
  * Body
  */
 
 body {
-  background: #8fd2cb url('../images/bg.jpg') repeat-x 0 0;
+  background: url('../images/heart.png') repeat 0 -10px,url('../images/bg.jpg') repeat-x 0 0;
+  background-color: #8fd2cb;
   margin: 0;
   padding: 0;
 }
@@ -52,11 +44,12 @@ body {
  */
 
 #header {
+  padding-top: 2em;
 }
 
 #logo { /* Wrapping link for logo */
   float: left; /* LTR */
-  margin: 0;
+  margin: 2em 0;
   padding: 0;
 }
 #logo img {
@@ -64,7 +57,8 @@ body {
 }
 
 #name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
+  display: block;
+  text-indent: -20000px;
 }
 
 #site-name { /* The name of the website */
@@ -97,6 +91,7 @@ body {
 
 #main {
   background: #fff;
+  outline: 50px solid rgba(0,0,0,0.16);
 }
 
 /*
@@ -129,6 +124,9 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+}
+h1#page-title {
+  margin: 1em 0 0 1em;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -231,6 +229,20 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
+  font-size: 0.75em;
+  overflow: hidden;
+  padding-top: 3em;
+}
+#block-block-2 {
+  float: left;
+}
+#block-block-3 {
+  float: right;
+}
+#block-block-3 p a {
+  color: #3e3e3e;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /*
@@ -238,4 +250,26 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 .region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+}
+
+/*
+ * Front Page
+ */
+
+.front #content h1 {
+  display: block;
+  height: 0px;
+  text-indent: -20000px;
+}
+.front-img {
+  float: left;
+  margin-right: 2em;
+  margin-top: 0;
+}
+
+/*
+ * Contact Page
+ */
+#contact-site-form {
+  margin: 0 2em;
 }
